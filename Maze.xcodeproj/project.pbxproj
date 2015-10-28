@@ -8,18 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		B09E49F71BE0FF0100C0C3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */; };
-		B09E49F91BE0FF0100C0C3AE /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = B09E49F81BE0FF0100C0C3AE /* GameScene.sks */; };
 		B09E49FB1BE0FF0100C0C3AE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */; };
 		B09E49FD1BE0FF0100C0C3AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */; };
 		B09E4A001BE0FF0100C0C3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09E49FE1BE0FF0100C0C3AE /* Main.storyboard */; };
 		B09E4A021BE0FF0100C0C3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09E4A011BE0FF0100C0C3AE /* Assets.xcassets */; };
 		B09E4A051BE0FF0100C0C3AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09E4A031BE0FF0100C0C3AE /* LaunchScreen.storyboard */; };
+		B09E4A0F1BE1031000C0C3AE /* AAPLGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A0E1BE1031000C0C3AE /* AAPLGame.swift */; };
+		B09E4A111BE1032600C0C3AE /* AAPLLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A101BE1032600C0C3AE /* AAPLLevel.swift */; };
+		B09E4A191BE104ED00C0C3AE /* AAPLSpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A181BE104ED00C0C3AE /* AAPLSpriteNode.swift */; };
+		B09E4A1B1BE1050E00C0C3AE /* AAPLScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A1A1BE1050E00C0C3AE /* AAPLScene.swift */; };
+		B09E4A1D1BE1060F00C0C3AE /* AAPLEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A1C1BE1060F00C0C3AE /* AAPLEntity.swift */; };
+		B09E4A1F1BE1064700C0C3AE /* AAPLSpriteComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A1E1BE1064700C0C3AE /* AAPLSpriteComponent.swift */; };
+		B09E4A211BE1066400C0C3AE /* AAPLPlayerControlComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A201BE1066400C0C3AE /* AAPLPlayerControlComponent.swift */; };
+		B09E4A231BE1069000C0C3AE /* AAPLIntelligenceComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A221BE1069000C0C3AE /* AAPLIntelligenceComponent.swift */; };
+		B09E4A251BE1071A00C0C3AE /* AAPLEnemyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A241BE1071A00C0C3AE /* AAPLEnemyState.swift */; };
+		B09E4A271BE1074500C0C3AE /* AAPLEnemyChaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A261BE1074500C0C3AE /* AAPLEnemyChaseState.swift */; };
+		B09E4A291BE1075C00C0C3AE /* AAPLEnemyFleeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A281BE1075C00C0C3AE /* AAPLEnemyFleeState.swift */; };
+		B09E4A2B1BE1077E00C0C3AE /* AAPLEnemyDefeatedState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A2A1BE1077E00C0C3AE /* AAPLEnemyDefeatedState.swift */; };
+		B09E4A2F1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E4A2E1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B09E49F31BE0FF0100C0C3AE /* Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B09E49F81BE0FF0100C0C3AE /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B09E49FF1BE0FF0100C0C3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,6 +38,19 @@
 		B09E4A041BE0FF0100C0C3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B09E4A061BE0FF0100C0C3AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B09E4A0C1BE0FF6500C0C3AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B09E4A0E1BE1031000C0C3AE /* AAPLGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLGame.swift; sourceTree = "<group>"; };
+		B09E4A101BE1032600C0C3AE /* AAPLLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AAPLLevel.swift; sourceTree = "<group>"; };
+		B09E4A181BE104ED00C0C3AE /* AAPLSpriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLSpriteNode.swift; path = Maze/Logic/AAPLSpriteNode.swift; sourceTree = "<group>"; };
+		B09E4A1A1BE1050E00C0C3AE /* AAPLScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLScene.swift; path = Maze/Logic/AAPLScene.swift; sourceTree = "<group>"; };
+		B09E4A1C1BE1060F00C0C3AE /* AAPLEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEntity.swift; path = Logic/AAPLEntity.swift; sourceTree = "<group>"; };
+		B09E4A1E1BE1064700C0C3AE /* AAPLSpriteComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLSpriteComponent.swift; path = Logic/AAPLSpriteComponent.swift; sourceTree = "<group>"; };
+		B09E4A201BE1066400C0C3AE /* AAPLPlayerControlComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLPlayerControlComponent.swift; path = Logic/AAPLPlayerControlComponent.swift; sourceTree = "<group>"; };
+		B09E4A221BE1069000C0C3AE /* AAPLIntelligenceComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLIntelligenceComponent.swift; path = Logic/AAPLIntelligenceComponent.swift; sourceTree = "<group>"; };
+		B09E4A241BE1071A00C0C3AE /* AAPLEnemyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEnemyState.swift; path = Logic/AAPLEnemyState.swift; sourceTree = "<group>"; };
+		B09E4A261BE1074500C0C3AE /* AAPLEnemyChaseState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEnemyChaseState.swift; path = Logic/AAPLEnemyChaseState.swift; sourceTree = "<group>"; };
+		B09E4A281BE1075C00C0C3AE /* AAPLEnemyFleeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEnemyFleeState.swift; path = Logic/AAPLEnemyFleeState.swift; sourceTree = "<group>"; };
+		B09E4A2A1BE1077E00C0C3AE /* AAPLEnemyDefeatedState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEnemyDefeatedState.swift; path = Logic/AAPLEnemyDefeatedState.swift; sourceTree = "<group>"; };
+		B09E4A2E1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AAPLEnemyRespawnState.swift; path = Logic/AAPLEnemyRespawnState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +69,7 @@
 			children = (
 				B09E4A0C1BE0FF6500C0C3AE /* README.md */,
 				B09E49F51BE0FF0100C0C3AE /* Maze */,
+				B09E4A131BE1038A00C0C3AE /* iOS */,
 				B09E49F41BE0FF0100C0C3AE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,8 +85,19 @@
 		B09E49F51BE0FF0100C0C3AE /* Maze */ = {
 			isa = PBXGroup;
 			children = (
+				B09E4A0E1BE1031000C0C3AE /* AAPLGame.swift */,
+				B09E4A101BE1032600C0C3AE /* AAPLLevel.swift */,
+				B09E4A141BE103E100C0C3AE /* SpriteKit */,
+				B09E4A161BE1040100C0C3AE /* Entity-Component */,
+				B09E4A171BE1042C00C0C3AE /* Enemy State Machine */,
+			);
+			path = Maze;
+			sourceTree = "<group>";
+		};
+		B09E4A131BE1038A00C0C3AE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
 				B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */,
-				B09E49F81BE0FF0100C0C3AE /* GameScene.sks */,
 				B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */,
 				B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */,
 				B09E49FE1BE0FF0100C0C3AE /* Main.storyboard */,
@@ -69,7 +105,41 @@
 				B09E4A031BE0FF0100C0C3AE /* LaunchScreen.storyboard */,
 				B09E4A061BE0FF0100C0C3AE /* Info.plist */,
 			);
+			name = iOS;
 			path = Maze;
+			sourceTree = "<group>";
+		};
+		B09E4A141BE103E100C0C3AE /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				B09E4A181BE104ED00C0C3AE /* AAPLSpriteNode.swift */,
+				B09E4A1A1BE1050E00C0C3AE /* AAPLScene.swift */,
+			);
+			name = SpriteKit;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		B09E4A161BE1040100C0C3AE /* Entity-Component */ = {
+			isa = PBXGroup;
+			children = (
+				B09E4A1C1BE1060F00C0C3AE /* AAPLEntity.swift */,
+				B09E4A1E1BE1064700C0C3AE /* AAPLSpriteComponent.swift */,
+				B09E4A201BE1066400C0C3AE /* AAPLPlayerControlComponent.swift */,
+				B09E4A221BE1069000C0C3AE /* AAPLIntelligenceComponent.swift */,
+			);
+			name = "Entity-Component";
+			sourceTree = "<group>";
+		};
+		B09E4A171BE1042C00C0C3AE /* Enemy State Machine */ = {
+			isa = PBXGroup;
+			children = (
+				B09E4A241BE1071A00C0C3AE /* AAPLEnemyState.swift */,
+				B09E4A261BE1074500C0C3AE /* AAPLEnemyChaseState.swift */,
+				B09E4A281BE1075C00C0C3AE /* AAPLEnemyFleeState.swift */,
+				B09E4A2A1BE1077E00C0C3AE /* AAPLEnemyDefeatedState.swift */,
+				B09E4A2E1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift */,
+			);
+			name = "Enemy State Machine";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +200,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B09E49F91BE0FF0100C0C3AE /* GameScene.sks in Resources */,
 				B09E4A051BE0FF0100C0C3AE /* LaunchScreen.storyboard in Resources */,
 				B09E4A021BE0FF0100C0C3AE /* Assets.xcassets in Resources */,
 				B09E4A001BE0FF0100C0C3AE /* Main.storyboard in Resources */,
@@ -144,9 +213,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B09E4A291BE1075C00C0C3AE /* AAPLEnemyFleeState.swift in Sources */,
 				B09E49FB1BE0FF0100C0C3AE /* GameScene.swift in Sources */,
+				B09E4A271BE1074500C0C3AE /* AAPLEnemyChaseState.swift in Sources */,
+				B09E4A2F1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift in Sources */,
+				B09E4A1B1BE1050E00C0C3AE /* AAPLScene.swift in Sources */,
+				B09E4A211BE1066400C0C3AE /* AAPLPlayerControlComponent.swift in Sources */,
+				B09E4A1F1BE1064700C0C3AE /* AAPLSpriteComponent.swift in Sources */,
 				B09E49FD1BE0FF0100C0C3AE /* GameViewController.swift in Sources */,
 				B09E49F71BE0FF0100C0C3AE /* AppDelegate.swift in Sources */,
+				B09E4A231BE1069000C0C3AE /* AAPLIntelligenceComponent.swift in Sources */,
+				B09E4A191BE104ED00C0C3AE /* AAPLSpriteNode.swift in Sources */,
+				B09E4A251BE1071A00C0C3AE /* AAPLEnemyState.swift in Sources */,
+				B09E4A111BE1032600C0C3AE /* AAPLLevel.swift in Sources */,
+				B09E4A1D1BE1060F00C0C3AE /* AAPLEntity.swift in Sources */,
+				B09E4A2B1BE1077E00C0C3AE /* AAPLEnemyDefeatedState.swift in Sources */,
+				B09E4A0F1BE1031000C0C3AE /* AAPLGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

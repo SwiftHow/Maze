@@ -38,7 +38,7 @@ class AAPLGame: NSObject, AAPLSceneDelegate, SKPhysicsContactDelegate {
         }
         set {
             if let component = player.componentForClass(AAPLPlayerControlComponent) {
-                component.attemptedDirection = playerDirection
+                component.attemptedDirection = newValue
             }
         }
     }
@@ -48,7 +48,7 @@ class AAPLGame: NSObject, AAPLSceneDelegate, SKPhysicsContactDelegate {
             let powerupDuration: NSTimeInterval = 10
             if self.hasPowerup != newValue {
                 var nextState: AnyClass
-                if !newValue {
+                if newValue {
                     nextState = AAPLEnemyFleeState.self
                 } else {
                     nextState = AAPLEnemyChaseState.self

@@ -9,5 +9,5 @@
 import GameplayKit
 
 class AAPLEntity: GKEntity {
-
+    var gridPosition: vector_int2 = vector_int2(0, 0)
 }

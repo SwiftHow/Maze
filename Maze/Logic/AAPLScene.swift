@@ -25,4 +25,10 @@ class AAPLScene: SKScene {
     override func didMoveToView(view: SKView) {
         aaplDelegate?.didMoveToView(self, view: view)
     }
+    
+    override func update(currentTime: NSTimeInterval) {
+        if let game = aaplDelegate as? AAPLGame {
+            game.update(currentTime, forScene: self)
+        }
+    }
 }

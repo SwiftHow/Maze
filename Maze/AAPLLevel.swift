@@ -8,10 +8,6 @@
 
 import GameplayKit
 
-enum AAPLPlayerDirection {
-    case None, Left, Right, Down, Up
-}
-
 enum TileType: Int {
     case Open = 0
     case Wall = 1

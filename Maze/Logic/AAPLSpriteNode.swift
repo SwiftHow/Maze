@@ -9,5 +9,5 @@
 import SpriteKit
 
 class AAPLSpriteNode: SKSpriteNode {
-
+    weak var owner: AAPLSpriteComponent?
 }

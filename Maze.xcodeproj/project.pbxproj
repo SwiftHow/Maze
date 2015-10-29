@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B09E49F71BE0FF0100C0C3AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */; };
-		B09E49FB1BE0FF0100C0C3AE /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */; };
 		B09E49FD1BE0FF0100C0C3AE /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */; };
 		B09E4A001BE0FF0100C0C3AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B09E49FE1BE0FF0100C0C3AE /* Main.storyboard */; };
 		B09E4A021BE0FF0100C0C3AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B09E4A011BE0FF0100C0C3AE /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 /* Begin PBXFileReference section */
 		B09E49F31BE0FF0100C0C3AE /* Maze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Maze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B09E49FF1BE0FF0100C0C3AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B09E4A011BE0FF0100C0C3AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				B09E49F61BE0FF0100C0C3AE /* AppDelegate.swift */,
-				B09E49FA1BE0FF0100C0C3AE /* GameScene.swift */,
 				B09E49FC1BE0FF0100C0C3AE /* GameViewController.swift */,
 				B09E49FE1BE0FF0100C0C3AE /* Main.storyboard */,
 				B09E4A011BE0FF0100C0C3AE /* Assets.xcassets */,
@@ -214,7 +211,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B09E4A291BE1075C00C0C3AE /* AAPLEnemyFleeState.swift in Sources */,
-				B09E49FB1BE0FF0100C0C3AE /* GameScene.swift in Sources */,
 				B09E4A271BE1074500C0C3AE /* AAPLEnemyChaseState.swift in Sources */,
 				B09E4A2F1BE107A200C0C3AE /* AAPLEnemyRespawnState.swift in Sources */,
 				B09E4A1B1BE1050E00C0C3AE /* AAPLScene.swift in Sources */,

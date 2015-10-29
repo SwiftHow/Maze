@@ -16,40 +16,38 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let scene = GameScene(fileNamed:"GameScene") {
-            // Configure the view.
+        // Create the game and its SpriteKit scene.
+        game = AAPLGame()
+        if let scene = game?.scene {
+            scene.scaleMode = .AspectFit
+            
+            // Present the scene and configure the SpriteKit view.
             let skView = self.view as! SKView
+            skView.presentScene(scene)
+            skView.ignoresSiblingOrder = true
             skView.showsFPS = true
             skView.showsNodeCount = true
-            
-            /* Sprite Kit applies additional optimizations to improve rendering performance */
-            skView.ignoresSiblingOrder = true
-            
-            /* Set the scale mode to scale to fit the window */
-            scene.scaleMode = .AspectFill
-            
-            skView.presentScene(scene)
         }
     }
-
-    override func shouldAutorotate() -> Bool {
-        return true
+    
+    @IBAction func swipeUp(sender: AnyObject) {
+        game?.playerDirection = .Up
     }
-
-    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
-        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
-            return .AllButUpsideDown
-        } else {
-            return .All
-        }
+    
+    @IBAction func swipeRight(sender: AnyObject) {
+        game?.playerDirection = .Right
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Release any cached data, images, etc that aren't in use.
+    
+    @IBAction func swipeDown(sender: AnyObject) {
+        game?.playerDirection = .Down
     }
-
-    override func prefersStatusBarHidden() -> Bool {
-        return true
+    
+    @IBAction func swipeLeft(sender: AnyObject) {
+        game?.playerDirection = .Left
     }
+    
+    @IBAction func tap(sender: AnyObject) {
+        game?.hasPowerup = true
+    }
+    
 }

@@ -17,9 +17,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="THa-wl-bMr" appends="YES" id="fcq-OM-zeg"/>
+                            <outletCollection property="gestureRecognizers" destination="v0G-Pn-LSb" appends="YES" id="GM6-pi-8Oo"/>
+                            <outletCollection property="gestureRecognizers" destination="saT-o4-JmD" appends="YES" id="pVp-Fs-1LZ"/>
+                            <outletCollection property="gestureRecognizers" destination="HIX-lt-QuJ" appends="YES" id="QxV-4p-XaT"/>
+                            <outletCollection property="gestureRecognizers" destination="cNY-Gd-XNl" appends="YES" id="IZM-Wu-74Y"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="THa-wl-bMr">
+                    <connections>
+                        <action selector="swipeUp:" destination="BV1-FR-VrT" id="44Y-VG-3RA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="v0G-Pn-LSb">
+                    <connections>
+                        <action selector="swipeRight:" destination="BV1-FR-VrT" id="WiH-M5-FxA"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="saT-o4-JmD">
+                    <connections>
+                        <action selector="swipeDown:" destination="BV1-FR-VrT" id="eFA-VJ-dmS"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="HIX-lt-QuJ">
+                    <connections>
+                        <action selector="swipeLeft:" destination="BV1-FR-VrT" id="BBv-ko-9Ir"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <tapGestureRecognizer id="cNY-Gd-XNl">
+                    <connections>
+                        <action selector="tap:" destination="BV1-FR-VrT" id="JCd-MC-h6f"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
